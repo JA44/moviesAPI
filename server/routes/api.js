@@ -73,7 +73,7 @@ exports.addMovie = function (req, res) {
 	});
 
 	if (existingMovie) {
-		return res.status(500).json({ error: 'Le film ' + existingMovie.title + ' a déjà été ajouté.' });
+		return res.status(400).json({ error: 'Le film ' + existingMovie.title + ' a déjà été ajouté.' });
 	} else {
 		ID ++;
 		movieToAdd.id = ID;
