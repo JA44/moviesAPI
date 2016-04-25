@@ -13,6 +13,11 @@ var server = http.createServer(app);
 app.set('port', process.env.PORT || 3001);
 app.use(bodyParser.json());
 
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  next();
+});
+
 app.get('/', function (req, res) {
 	res.render('index');
 }),

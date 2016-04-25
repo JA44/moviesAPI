@@ -4,7 +4,7 @@ exports.movies = [
 		title : "Avatar",
 		category : 'Sciences Fictions',
 		releaseYear : "2010",
-		poster : "img/avatar.jpg",
+		poster : "avatar.jpg",
 		directors : "James Cameron",
 		actors : "Sam Worthington, Zoe Saldana, Sigourney Weaver, Stephen Lang, Michelle Rodriguez",
 		synopsis : "Sur la lointaine planète de Pandora, Jake Sully, un héros malgré lui, " +
@@ -19,7 +19,7 @@ exports.movies = [
 		title : "Seigneur des Anneaux : La Communauté de l'Anneau",
 		category : 'Sciences Fictions',
 		releaseYear : "2001",
-		poster : "img/seigneurdesanneaux1.jpg",
+		poster : "seigneurdesanneaux1.jpg",
 		directors : "Peter Jackson",
 		actors : "Elijah Wood, Sean Astin, Ian McKellen, Sala Baker, Viggo Mortensen",
 		synopsis : "Frodon le Hobbit hérite de l'Anneau Unique, un instrument de pouvoir absolu" +
@@ -34,7 +34,7 @@ exports.movies = [
 		title : "The Grudge",
 		category : 'Horreur',
 		releaseYear : "2004",
-		poster : "img/thegrudge.jpg",
+		poster : "thegrudge.jpg",
 		directors : "Takashi Shimizu",
 		actors : "Sarah Michelle Gellar, Jason Behr, Clea DuVall, Kadee Strickland, Bill Pullman",
 		synopsis : "Dans ce qui paraît être une paisible maison de Tokyo se cache un épouvantable fléau. " +
@@ -49,7 +49,7 @@ exports.movies = [
 		title : "Yip Man 2",
 		category : 'Art Martial',
 		releaseYear : "2010",
-		poster : "img/yipman.jpg",
+		poster : "yipman.jpg",
 		directors : "Wilson Yip",
 		actors : "Donnie Yen, Sammo Hung Kam-Bo, Simon Yam, Lynn Hung, Xiaoming Huang",
 		synopsis : "Film biographique sur la vie de Ip Man, pionnier du Wing Chun et maitre de Bruce Lee.",
@@ -62,7 +62,7 @@ exports.movies = [
 		title : "[REC]",
 		category : 'Horreur',
 		releaseYear : "2008",
-		poster : "img/rec.jpg",
+		poster : "rec.jpg",
 		directors : "Paco Plaza, Jaume Balagueró",
 		actors : "Manuela Velasco, Ferran Terraza, Jorge Yamam, Carlos Lasarte, Pablo Rosso",
 		synopsis : "Alors qu'ils suivent des pompiers lors d'une intervention, une reporter et son caméraman " +
@@ -77,7 +77,7 @@ exports.movies = [
 		title : "Resident Evil",
 		category : 'Horreur',
 		releaseYear : "2002",
-		poster : "img/residentevil.jpg",
+		poster : "residentevil.jpg",
 		directors : "Paul W.S. Anderson",
 		actors : "Milla Jovovich, Eric Mabius, Michelle Rodriguez, James Purefoy, Liz May Brice",
 		synopsis : "Un virus mortel s'est propagé dans un laboratoire souterrain et a mis fin à toute vie humaine. " +
@@ -92,7 +92,7 @@ exports.movies = [
 		title : "Seigneur des Anneaux : les deux Tours",
 		category : 'Sciences Fictions',
 		releaseYear : "2002",
-		poster : "img/seigneurdesanneaux2.jpg",
+		poster : "seigneurdesanneaux2.jpg",
 		directors : "Peter Jackson",
 		actors : "Elijah Wood, Sean Astin, Ian McKellen, Sala Baker, Viggo Mortensen",
 		synopsis : "Frodon Sacquet, le Hobbit, doit braver de terribles dangers pour tenter de détruire " +
@@ -107,7 +107,7 @@ exports.movies = [
 		title : "Seigneur des Anneaux : le retour du Roi",
 		category : 'Sciences Fictions',
 		releaseYear : "2003",
-		poster : "img/seigneurdesanneaux3.jpg",
+		poster : "seigneurdesanneaux3.jpg",
 		directors : "Peter Jackson",
 		actors : "Elijah Wood, Sean Astin, Ian McKellen, Sala Baker, Viggo Mortensen",
 		synopsis : "Tandis que les ténèbres se répandent sur la Terre du Milieu, Aragorn se révèle être l'héritier " +
@@ -122,7 +122,7 @@ exports.movies = [
 		title : "Crazy Kung Fu",
 		category : 'Art Martial',
 		releaseYear : "2005",
-		poster : "img/crazykungfu.jpg",
+		poster : "crazykungfu.jpg",
 		directors : "Stephen Chow",
 		actors : "Stephen Chow, Wah Yuen, Leung Siu Lung, Dong Zhi Hua, Chiu Chi Ling",
 		synopsis : "Sing, un prétendu gangster, doit surmonter son incapacité à manier le sabre et démontrer " +
