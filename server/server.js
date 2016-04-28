@@ -29,7 +29,7 @@ app.get('/movies', api.fetchMovies);
 app.get('/movies/:id', api.fetchMovie);
 app.get('/movies/:id/actors', api.fetchActorsOfMovie);
 app.post('/movies', api.addMovie);
-app.put('/movies', api.updateMovie);
+app.put('/movies/:id', api.updateMovie);
 app.delete('/movies/:id', api.deleteMovie);
 
 
