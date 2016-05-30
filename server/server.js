@@ -10,7 +10,7 @@ var express 	= require('express'),
 var app = express();
 var server = http.createServer(app);
 
-app.set('port', process.env.PORT || 3001);
+app.set('port', process.env.PORT || 3002);
 app.use(bodyParser.json());
 
 app.use(function(req, res, next) {
@@ -29,7 +29,7 @@ app.get('/movies', api.fetchMovies);
 app.get('/movies/:id', api.fetchMovie);
 app.get('/movies/:id/actors', api.fetchActorsOfMovie);
 app.post('/movies', api.addMovie);
-app.put('/movies', api.updateMovie);
+app.put('/movies/:id', api.updateMovie);
 app.delete('/movies/:id', api.deleteMovie);
 
 
