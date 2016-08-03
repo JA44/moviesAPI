@@ -95,11 +95,12 @@ exports.addMovie = function (req, res) {
  * Update a movie
  */
 exports.updateMovie = function(req, res) {
-    var movietoUpdate = req.body;
+    var id = req.params.id,
+				movieToUpdate = req.body;
 
 	_.forEach(MOVIES, function (movie, index) {
-		if (movie.id == movietoUpdate.id) {
-			MOVIES[index] = movietoUpdate;
+		if (movie.id == id) {
+			MOVIES[index] = movieToUpdate;
 			return res.status(200).end();
 		}
 	});

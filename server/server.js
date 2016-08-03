@@ -14,6 +14,7 @@ var express 	= require('express'),
 var app = express();
 var server = http.createServer(app);
 
+
 var requireAuth = passport.authenticate('jwt', { session: false });
 
 app.set('port', process.env.PORT || 3002);
