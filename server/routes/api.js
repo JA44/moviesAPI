@@ -2,6 +2,13 @@
 
 
 var _ = require('lodash'),
+		jwt = require('jsonwebtoken'),
+		_blacklistToken = [],
+	_user = {
+		speudo: '',
+		id: '',
+		profile: ''
+	},
 	MOVIES = require('./data/movies').movies;
 
 /**
@@ -15,6 +22,7 @@ var ID = 9;
  * If category query is provided, fetch movies filtered by category
  */
 exports.fetchMovies = function (req, res) {
+	console.log('fetchMovies');
     var movies = [];
     if(req.query.category){
         movies = MOVIES.filter(function(movie){
@@ -117,3 +125,62 @@ exports.deleteMovie = function (req, res) {
 	}
 
 };
+
+
+/**
+ * Return the current user
+ */
+
+exports.me = function me(req, res) {
+	return res.status(200).json(_user);
+}
+
+
+ /**
+  * Login an user
+  */
+
+exports.login = function login(req, res) {
+	_user = {
+		speudo: 'JA',
+		id: 10,
+		profile: 'ADMIN'
+	}
+
+	var token = jwt.sign(_user, 'secret', {
+              expiresIn: 10080 // in seconds
+            });
+	res.status(200).json({ success: true, token: 'JWT ' + token });
+}
+
+	/**
+	 * Logout an user
+	 */
+
+	 exports.logout = function logout(req, res) {
+	 	_user = {
+	 		speudo: '',
+	 		id: '',
+	 		profile: ''
+	 	}
+
+		//addBlacklistToken();
+
+	 	return res.status(200).json(_user);
+	 }
+
+exports.getCurrentUser = function getCurrentUser() {
+	return _user;
+}
+
+exports.isLogged = function isLogged() {
+	return !_user.speudo;
+}
+
+exports.addBlacklistToken = function addBlacklistToken(token) {
+	_blacklistToken.push(token);
+}
+
+exports.tokenIsBlacklisted = function tokenIsBlacklisted(token) {
+	return _blacklistToken.indexOf(token) !== -1;
+}
